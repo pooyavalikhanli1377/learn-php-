@@ -26,7 +26,7 @@ echo"<hr>". sizeof($arry1)."<hr>";
 //md5 funtion 
 echo md5($test);
 //stripos&&stpos
-echo "<hr>".strpos($name1,"va");
+//echo "<hr>".strpos($name1,"va");
 echo "<hr>".stripos($test,"v" );
 //impload
 echo"<hr>". implode($arry1)."<hr>";
