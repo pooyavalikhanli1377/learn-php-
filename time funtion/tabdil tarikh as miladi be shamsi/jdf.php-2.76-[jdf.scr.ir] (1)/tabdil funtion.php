@@ -4,13 +4,11 @@ include 'jdf.php';
 //echo $time;
 //echo jdate('Y/m/d',time());
 
-function tabdil (string $time){
- $time =$_GET["time"];
-$array =explode('-',$time );
-list($yar,$mot,$date)=$array;
-echo "<br>".$yar."<hr>".$mot."<hr>".$date;
-$t=mktime($mot,$date,$yar);
-
-echo"<hr><br>".jdate("Y/m/d",$t,"",'Asia/Tehran') ;;
+function tabdil ( string $time){
+ $time =$_POST["time"];
+list($yar,$mot,$date)=explode('-',$time );
+$timestamp=mktime(0,0,0,$mot,$date,$yar);
+echo jdate("Y/m/d",$timestamp,"",'Asia/Tehran','en') ;;
 return ;
 }
+
