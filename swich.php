@@ -1,5 +1,5 @@
 <?php
-$days = date("l");
+$days = date('l');
 switch ($days) {
     case "satrday":
         echo "شنبه ".date("d");
