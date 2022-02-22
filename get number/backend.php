@@ -2,9 +2,11 @@
 function echonumber (string $nuber ){
  $nuber =$_POST['num'];
  switch($nuber){
- // case  "0":
-  // echo "zero ";
-   //break; 
+ ///////////////////////////////////////////error 
+  case  "0":
+   echo "zero ";
+   break;
+   /////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
   case  "1":
    echo "one ";
    break; 
@@ -301,13 +303,8 @@ function echonumber (string $nuber ){
                                                                                                      break; case "100":
                                                                                                       echo "one hundred "; 
                                                                                                       break;
-
                                                                                                      default:
                                                                                                        echo "!!!!!!!!!!!!!!!!!!this is no number !!!!!!!!!!!!!!!!!";
-
-                                                       
-                                                      
-
 
  }
 
