@@ -19,4 +19,4 @@ function rand2($b=10){
  }
 return $print;
 }
-
+echo rand2();
