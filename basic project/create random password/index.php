@@ -17,13 +17,18 @@ session_start();
  <div class="container">
   <?php
   if (isset($_SESSION['msg']) && $_SESSION['msg']) {
-   echo $_SESSION['msg'];
+      echo $_SESSION['msg'];
+  }
+  if (isset($_SESSION['erorr']) && $_SESSION['msg']) {
+    $log=$_SESSION['erorr'];
+    echo "<script>alert('$log')</script>";
   }
   ?>
-  <form method="POST" action="form.php" class="was-validated">
+  <form method="POST" action="Rndom.php" class="was-validated">
    <div class="form-group">
-    <input type="text" name="number" class="form-control">
-    <button type="submit" name="send" value="send" class="btn btn-primary">SEND</button>
+   <label >Number of characters</label> <input type="text" name="number" class="form-control">
+   <label >Ditali  </label> <input type="text" name="ditail" class="form-control">
+    <button type="submit" name="send" value="send" class="btn btn-primary">refresh</button>
    </div>
   </form>
  </div>
