@@ -3,9 +3,10 @@ date_default_timezone_set("asia/tehran");
 if (isset($_POST["send"])) {
  cratepassword();
 }
-// if (isset($_POST["save"])) {
-//  sevepassword();
-// }
+else if (isset($_POST["showditail"])) {
+ showpassword ();
+  }  
+  //function for crate password and save password 
 function cratepassword()
 {
  session_start();
@@ -29,9 +30,9 @@ $erorr=null;
   $floc = 'C:\xampp\htdocs\learn php\basic project\create random password\diteil password.txt';
   $time = date('Y/m/d H:i:s', time());
   $openfile = fopen($floc, 'a+');
-  fwrite($openfile, "YOR DITAIL PASSWORD IS $not YOUR PASSWORD IS  $password IS SET IN $time " . PHP_EOL);
+  fwrite($openfile, "YOR DITAIL PASSWORD IS: $not YOUR PASSWORD IS: <=>  $password <=>  IS SET IN: $time " . PHP_EOL);
   fclose($openfile);
-  $erorr ="your ditai; and password is save";
+  $erorr ="your ditai: and password is save";
  } else {
   $erorr = "if save to fille Please Fill in the field ";
  }
@@ -40,4 +41,12 @@ $erorr=null;
 $_SESSION['erorr']=$erorr;
  $_SESSION['msg'] = $msg;
  header("Location:index.php");
+}
+//show ditail 
+function showpassword (){
+$reade=fopen('C:\xampp\htdocs\learn php\basic project\create random password\diteil password.txt','r'); 
+ for ($i=0;$i<=100;$i++){
+  echo "<h2>$i:   ". nl2br(fgets($reade))."<h2>"; 
+  } 
+fclose($reade);
 }

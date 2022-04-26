@@ -29,7 +29,12 @@ session_start();
    <label >Number of characters</label> <input type="text" name="number" class="form-control">
    <label >Ditali  </label> <input type="text" name="ditail" class="form-control">
     <button type="submit" name="send" value="send" class="btn btn-primary">refresh</button>
-   </div>
   </form>
+  <form method="POST" action="Rndom.php" class="was-validated">
+  <div class="form-group">
+    <button type="submit" name="showditail" value="send" class="btn btn-primary">Show Ditail</button>
+</form>
+   </div>
+   </form>
  </div>
 </body>
