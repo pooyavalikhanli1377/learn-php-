@@ -4,7 +4,7 @@ mysql -h localhost -u root -p
 show databases;
 show tables; 
 --create 
-create table table_name ;
+create table table_name (clum_name varible&key&(number) ) ;
 create database database_name ;
 --delet 
 drop  database database_name;
