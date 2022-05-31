@@ -23,8 +23,8 @@ session_start();
  ?>
  <form method="POST" action="insert to database .php" enctype="multipart/form-data" class="was-validated">
  <div class="form-group">
-  <label>fname :<input type="text " name="lname" class="form-control"></label></br>
-  <label>lname :<input type="text " name="fname"class="form-control" ></label></br>
+  <label>fname :<input type="text " name="fname" class="form-control"></label></br>
+  <label>lname :<input type="text " name="lname"class="form-control" ></label></br>
   <label>age :     <input type="text" name="age"class="form-control"></label></br>
   <button type="submit" name="send" value="send"class="btn btn-primary">SEND</button>
  </div>
