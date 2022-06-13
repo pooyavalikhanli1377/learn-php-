@@ -1,5 +1,5 @@
 <?php
-list($host, $dbname, $user, $password) = ["localhost", "log", "ro ot", ""];
+list($host, $dbname, $user, $password) = ["localhost", "log", "root", ""];
 try{
     $db=new pdo ("mysql:host=$host;dbname=$dbname", $user,$password);
     $db->setAttribute(PDO::ATTR_ERRMODE , PDO::ERRMODE_WARNING);
